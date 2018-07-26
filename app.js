@@ -24,7 +24,7 @@ app.get(`/`, (req, res) => {
     .then(json => {
       console.log(`Top 10 CryptoCurrencies with largest 24h volume (coinmarketcap)`)
       json.data.forEach(token => {
-        console.log(`${token.name}: $${getPrice(token)}`)
+        console.log(`${token.name}|  Price: $${getPrice(token)} Volume: ${getVolume(token)}`)
       })
     })
 })

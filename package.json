@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "run": "nodemon app.js",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "fetch": "^1.1.0",
+    "next": "^6.1.1",
     "node-fetch": "^2.2.0",
     "nodemon": "^1.18.3",
     "react": "^16.4.1",
